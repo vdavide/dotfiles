@@ -1,0 +1,24 @@
+F11
+    i3-msg mode bypass && killall sxhkd && sxhkd -c "/home/ares/.config/sxhkd/default"
+
+F{1-9}
+    i3-msg workspace {1-9}
+F10
+    i3-msg workspace 10
+
+shift + F{1-9}
+    i3-msg move container to workspace {1-9}
+shift + F10
+    i3-msg move container to workspace 10
+    
+super + F10
+    ksysguard
+
+super + d; r
+    rofi -show-icons -drun-show-actions -modi drun,window,run,ssh,p:.config/rofi/scripts/rofi-power-menu,keys -show drun
+
+super + d; p
+    rofi -show-icons -modi drun,window,run,ssh,p:.config/rofi/scripts/rofi-power-menu,keys -show p
+
+super + d; f
+    lolcate | rofi -keep-right -dmenu -i -multi-select | xargs -n 1 xdg-open

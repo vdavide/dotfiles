@@ -1,0 +1,2 @@
+F12
+    i3-msg mode default && killall sxhkd && sxhkd -c "/home/ares/.config/sxhkd/sxhkdrc"
